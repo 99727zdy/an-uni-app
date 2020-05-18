@@ -22,7 +22,7 @@
     "dev:mp-baidu": "cross-env NODE_ENV=development UNI_PLATFORM=mp-baidu vue-cli-service uni-build --watch",
     "dev:mp-qq": "cross-env NODE_ENV=development UNI_PLATFORM=mp-qq vue-cli-service uni-build --watch",
     "dev:mp-toutiao": "cross-env NODE_ENV=development UNI_PLATFORM=mp-toutiao vue-cli-service uni-build --watch",
-    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch --minimize",
     "dev:quickapp-light": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-light vue-cli-service uni-build --watch",
     "dev:quickapp-vue": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-vue vue-cli-service uni-build --watch",
     "info": "node node_modules/@dcloudio/vue-cli-plugin-uni/commands/info.js",
@@ -40,8 +40,11 @@
     "@dcloudio/uni-quickapp-light": "^2.0.0-26920200424005",
     "@dcloudio/uni-quickapp-vue": "^2.0.0-26920200424005",
     "@dcloudio/uni-stat": "^2.0.0-26920200424005",
+    "@dcloudio/uni-ui": "^1.1.9",
     "core-js": "^3.6.4",
     "flyio": "^0.6.2",
+    "moment": "^2.25.3",
+    "node-sass": "^4.14.1",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.11",
     "vuex": "^3.0.1"
@@ -64,6 +67,7 @@
     "mini-types": "*",
     "miniprogram-api-typings": "^2.8.0-2",
     "postcss-comment": "^2.0.0",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
